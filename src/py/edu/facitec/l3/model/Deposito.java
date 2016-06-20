@@ -8,16 +8,16 @@ public class Deposito {
 	private String nombre;
 	private String abreviatura;
 	private boolean estado;
-	private Date fecha_registro;
+	private String fecha_registro;
 	public Deposito() {
 		super();
 		this.codigo = 0;
 		this.nombre = "";
 		this.abreviatura = "";
 		this.estado = false;
-		this.fecha_registro = new Date();
+		this.fecha_registro = "";
 	}
-	public Deposito(int codigo, String nombre, String abreviatura, boolean estado, Date fecha_registro) {
+	public Deposito(int codigo, String nombre, String abreviatura, boolean estado, String fecha_registro) {
 		super();
 		this.codigo = codigo;
 		this.nombre = nombre;
@@ -50,10 +50,10 @@ public class Deposito {
 		this.abreviatura = abreviatura;
 	}
 	
-	public Date getFecha_registro() {
+	public String getFecha_registro() {
 		return fecha_registro;
 	}
-	public void setFecha_registro(Date fecha_registro) {
+	public void setFecha_registro(String fecha_registro) {
 		this.fecha_registro = fecha_registro;
 	}
 

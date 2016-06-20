@@ -11,7 +11,7 @@ public class ConexionManager {
 	
 	private static final String URL="jdbc:postgresql://localhost:5433/db_deposito";
 	private static final String USER="postgres";
-	private static final String PASSWORD="5504";
+	private static final String PASSWORD="123456";
 	
 public static Connection abrirConexion(){
 		
